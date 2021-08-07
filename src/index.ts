@@ -113,9 +113,9 @@ const startup = async () => {
                     return;
                 }
             } else {
-                pwd = question('Enter password to access wallet store:', {
-                    hideEchoBack: true,
-                });
+                //pwd = question('Enter password to access wallet store:', {
+                //    hideEchoBack: true,
+                //});
             }
             process.env.TATUM_API_KEY = flags.apiKey;
             await processSignatures(pwd, flags.testnet, flags.period, flags.path, flags.chain?.split(','));
